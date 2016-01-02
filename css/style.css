@@ -27,6 +27,9 @@ padding: 20px 0
 p, a{
 font-family: 'VerelaRound';
 }
+p.desc {
+text-align: justify;
+}
 img{
 max-width:100%;
 }
