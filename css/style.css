@@ -58,6 +58,31 @@ font-size:14px;
 }
 /*on scroll show*/
 
+/* =============================== Panel (List) ================================ */
+
+.panel-default h4 {
+  text-align: left;
+  line-height: 24px;
+  font-size: 22px;
+}
+.panel-default h5 {
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+}
+.panel-default h6 {
+  font-size: 15px;
+}
+.panel{
+  border-style: none;
+}
+.panel-body {
+  font-size: 18px;
+  padding-top: -10px;
+  text-align: left;
+}
+
+
 /* =============================== header ===================================== */
 .header{
 background: url(../img/bghead.jpg) no-repeat center fixed;
@@ -68,6 +93,17 @@ background-size: cover;
 filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
+
+.projheader{
+background: url(../img/pjhead.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+
 /* slider */
 
 .maskHeader{
@@ -214,9 +250,15 @@ margin: 0 auto;
 /* Full Page Image Header Area */
 
 .header {
+  position: relative; 
+}
+
+.projheader {
   position: relative;
  
 }
+
+
 .linear{
  transition:all 200ms linear;   
  -webkit-transition:all 200ms linear;   
@@ -241,12 +283,14 @@ background:#f2f2f2;
 /* ================================================= about us ================================================== */
 
 .about-content p{
-font-size:20px;
+font-size:16px;
 padding-bottom:20px;
 margin:0;
+text-align: justify;
+text-justify: inter-word;
 }
 .avatar{
- max-width:120px;   
+ max-width:160px;   
 }
 .avatar img{
     border-radius: 50%;
