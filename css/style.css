@@ -60,8 +60,17 @@ font-size:14px;
 
 /* =============================== Panel (List) ================================ */
 
+.left {
+  float: left;
+  font-size: 22px;
+}
+.right {
+  float: right;
+  text-align: right;
+  font-size: 22px;
+}
+
 .panel-default h4 {
-  text-align: left;
   line-height: 24px;
   font-size: 22px;
 }
@@ -79,7 +88,7 @@ font-size:14px;
 .panel-body {
   font-size: 18px;
   padding-top: -10px;
-  text-align: left;
+  font-family: 'VerelaRound';
 }
 
 
@@ -239,7 +248,7 @@ z-index: 77;
 padding: 0 0 20px 0;
 font-size:36px;
 font-weight:600;
-font-famiily:'Lato';
+font-family:'Lato';
 }
 .line-title{
 width: 40px;
@@ -288,6 +297,12 @@ padding-bottom:20px;
 margin:0;
 text-align: justify;
 text-justify: inter-word;
+}
+.about-content ul li{
+font-size:16px;
+text-align: justify;
+text-justify: inter-word;
+font-family: 'VerelaRound';
 }
 .avatar{
  max-width:160px;   

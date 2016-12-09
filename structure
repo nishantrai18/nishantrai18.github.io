@@ -1,15 +1,52 @@
 - Initial Background
 - Small introduction with important links
-- List of Internships
-- List of Projects
+- List of Internships	(DONE)
+- List of Projects	(DONE)
 - Links to Miscellaneous things (i.e. Hobbies, Travel, etc)
-- Contact Info
+- Contact Info	(DONE)
 
-- Internships:
+- Mention Interests
+
+- Publications:
+	- AdaScan
+	- ChaLearn
+	- Partial Multi View Clustering
+	- Maritime
+
+- Internships:	(DONE)
+	- CARIS Lab, UBC
 	- Xerox Research Centre India
 	- I.N.R.I.A. Paris
 
-- Major Projects:
+- Selected Projects:
+	- AdaScan: Adaptive Scan Pooling for Action Recognition
+	- Chalearn Personality Trait Analysis
+	- Visual Story Telling
+	- Visual Question Answering using Semantic Attention
+	- Real Time Vehicle Recognition and Automatic Number Plate Recognition
+	- Partial Multi View Clustering
+	- Alternate Paths in Road Networks
+
+- Other Projects:
+	- Computer Networks (Proxy, etc)
+	- Merging Point Clouds
+	- Predicting Human Arm Reach
+	- Social Network Analysis
+	- Word Embeddings Using Multiple Word Prototypes
+	- NachOS Operating System
+	- Geometric Data Structures
+	- MultiModal Emotion Recognition
+	- Othello, Battleship AI
+	- Question Topic Classifcation
+	- News Report Classification
+
+- Teaching Experience:
+	- Introduction to Computing
+
+- Major Projects:	(DONE)
+	- Chalearn Personality Trait Analysis
+	- Merging Point Clouds
+	- Predicting Human Arm Reach
 	- Multi View Clustering
 	- Alternate Paths
 	- Social Network Analysis
@@ -17,9 +54,10 @@
 	- NachOS Operating System
 	- Geometric Data Structures
 	- MultiModal Emotion Recognition
+	- Othello, Battleship AI
 	- News Report Classification
 		
-- Resources:
+- Resources:	(DONE)
 	- Project Reports
 	- Resumes
 	- Posters
@@ -35,15 +73,19 @@ Todos:
 		- Describe Place, Mentors, Project Undertaken, Duration (Official Details)
 		- Describe Project
 		- Mention some results
-- Add links to all hyperlinks
-- Collect photos for projects and internships
-	- mvc
-	- multivec
+- Add links to all hyperlinks	(DONE)
+- Collect photos for projects and internships 	(DONE)
+	- mvc	(DONE)
+	- multivec	(DONE)
 	- altpath		(DONE)
-	- socnet
-	- nachos
-	- geodata
-	- emodet
-	- newsrep
+	- socnet	(DONE)
+	- nachos	(DONE)
+	- geodata 	(DONE)
+	- emodet	(DONE)
+	- newsrep	(DONE)
 	
 - Possibly add other links such as hobbies, travel, etc
+
+
+
+
