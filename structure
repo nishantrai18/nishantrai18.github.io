@@ -27,6 +27,8 @@
 	- Partial Multi View Clustering
 	- Alternate Paths in Road Networks
 
+Add link to other projects here
+
 - Other Projects:
 	- Computer Networks (Proxy, etc)
 	- Merging Point Clouds
@@ -73,19 +75,32 @@ Todos:
 		- Describe Place, Mentors, Project Undertaken, Duration (Official Details)
 		- Describe Project
 		- Mention some results
-- Add links to all hyperlinks	(DONE)
-- Collect photos for projects and internships 	(DONE)
-	- mvc	(DONE)
-	- multivec	(DONE)
-	- altpath		(DONE)
-	- socnet	(DONE)
-	- nachos	(DONE)
-	- geodata 	(DONE)
-	- emodet	(DONE)
-	- newsrep	(DONE)
-	
+- Add links to all hyperlinks	(DONE)	
 - Possibly add other links such as hobbies, travel, etc
 
+
+Project Grid:
+
+- AdaScan: Adaptive Scan Pooling for Action Recognition	(Deep, CV)	(fig done)
+- Chalearn Personality Trait Analysis	(Deep, CV)	(Fig done)
+- Visual Story Telling	(Deep, CV)	(fig done)
+- Visual Question Answering using Semantic Attention	(Deep, CV)	(fig done)
+- Real Time Vehicle Recognition and Automatic Number Plate Recognition	(CV)	(fig done)
+- Partial Multi View Clustering	(Intern, Other) 	(Fig done)
+- Alternate Paths in Road Networks	(Intern, Algorithms)	(Fig done)
+
+- Computer Networks (Proxy, etc)	(Other)	(fig done)
+- Merging Point Clouds	(Intern, CV)	(fig done)
+- Predicting Human Arm Reach 	(Intern, CV)	(fig done)
+- Adaptive Strategies for Prisoner's Dillema	(Other)	(fig done)
+- ADA Compiler	(Other)	(fig done)
+- Social Network Analysis	(Intern, Algorithms) (Fig done)
+- Word Embeddings Using Multiple Word Prototypes	(NLP)	(Fig done)
+- NachOS Operating System	(Other)	(Fig done)
+- Geometric Data Structures	(Algorithms)	(Fig done)
+- MultiModal Emotion Recognition	(CV)	(Fig done)
+- News Report Classification	(Other)	(Fig done)
+- Sentiment Analysis of social media	(Other)
 
 
 
