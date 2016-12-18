@@ -67,13 +67,13 @@
 		<div id="flex-head" class="flexslider">
 			<ul class="slides">
 				<li>
-					<h1>Welcome to the Projects Page</h1>	
-					<h2>Read More for details and relevant resources</h2>
+					<h1>Welcome to the Projects page</h1>
+					<h2>Read more for details about my projects</h2>
 					<a href="#Projects" class="btn btnAbout btn-clear border-color color-primary btn-lg linear">PROJECTS</a>
 				</li>
 				<li>
-					<h1>It also contains details of my Internships</h1>	
-					<h2>Scroll down for details</h2>
+					<h1>This page also contains details of my Internships</h1>	
+					<h2>The description of my internship projects are also provided below</h2>
 					<a href="#Internships" class="btn btnAbout btn-clear border-color color-primary btn-lg linear">INTERNSHIPS</a>
 				</li>
 			</ul>
@@ -88,208 +88,453 @@
     <!-- ProjectList -->
     <div id="ProjectList" class="page clearfix">
         <div class="container">
-			<div class="row">
-	          	<div class="col-md-10  col-md-offset-1">
-				    <div class="build title-page">
-						<h2 class="text-center">PROJECT LIST</h2>	
-						<div class="line-title bg-primary"></div>
-					</div>
-			   	</div><!-- end col -->
-			</div><!-- end row -->
-		   	<div class="col-md-12">
+            <div class="row">
+                <div class="col-md-10  col-md-offset-1">
+                    <div class="build title-page">
+                        <h2 class="text-center">PROJECTS AT A GLANCE</h2>   
+                        <div class="line-title bg-primary"></div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+            
+            <div class="col-md-12">
                 
                 <ul id="filterOptions" class="clearfix">
                     <li class="cur"><a class="btn btn-link linear" href="#" data-group="all">All</a></li>
                     <li><span>/</span></li>
                     <li><a class="btn btn-link linear" href="#" data-group="intern">Internship Projects</a></li>
-					<li><span>/</span></li>
-                    <li><a class="btn btn-link linear" href="#" data-group="project">Projects</a></li> 
-                    
+                    <li><span>/</span></li>
+                    <li><a class="btn btn-link linear" href="#" data-group="deep">Deep Learning</a></li> 
+                    <li><span>/</span></li>
+                    <li><a class="btn btn-link linear" href="#" data-group="cv">Computer Vision</a></li> 
+                    <li><span>/</span></li>
+                    <li><a class="btn btn-link linear" href="#" data-group="nlp">Natural Language Processing</a></li> 
+                    <li><span>/</span></li>
+                    <li><a class="btn btn-link linear" href="#" data-group="algo">Algorithms</a></li> 
+                    <li><span>/</span></li>
+                    <li><a class="btn btn-link linear" href="#" data-group="other">Others</a></li> 
+                    <!-- Internship Projects, Deep Learning, Computer Vision, NLP, Algorithms, Others -->
                 </ul>
                
             </div><!--end-col-->
-		    <div class="col-md-12">
-		    <div class="folio-content clearfix">
-		    <div class="row">
-		    <div class="container_folio clearfix gallery" id="grid">
+            <div class="col-md-12">
+            <div class="folio-content clearfix">
+            <div class="row">
+            <div class="container_folio clearfix gallery" id="grid">
 
-			<div class="col-xs-12 col-sm-4 col-md-4 box" data-groups='["all", "intern"]'>
-				<div class="folio-img">
-					<div class="portfolio-item ">
-						<div class="thumbnail">
-						   <div class="thumb-img">
-						  
-						  <div class="link-attr">
-							    <a href="img/portfolio/mvc.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Multi View Clustering using NMF" class="link-search animated linear"><i class="fa fa-search"></i></a>
-							   <a href="projects.html#xrci" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
-						   </div>
-							<img class="linear img-portfolio img-responsive" src="img/portfolio/mvc.jpg" alt="Multi View Clustering">
-						  
-						   
-						   <div class="folio-caption">
-						   <i class="fa fa-caret-up"></i>
-						       <p>Using NMF for MultiView Clustering</p>
-						      
-						   </div>
-						   </div>
-						</div>
-					
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 box" data-groups='["all", "project"]'>
-				<div class="folio-img">
-					<div class="portfolio-item">
-						<div class="thumbnail">
-						<div class="thumb-img">
-						 <div class="link-attr">
-						    <a href="img/portfolio/multivec.png" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Estimating and Computing Multiple senses of a word" class="link-search animated linear"><i class="fa fa-search"></i></a>
-						   <a href="projects.html#multivec" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
-					   </div>
-						<img class="linear img-portfolio img-responsive" src="img/portfolio/multivec.png" alt="Word Embeddings using multiple prototypes">
-						 <div class="link"><a href="#">This Is Folio Link2</a></div>
-						<div class="folio-caption">
-						<i class="fa fa-caret-up"></i>
-					       <p>Multiple Word Embeddings</p>
-					   </div>
-						</div>
-					    </div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 box" data-groups='["all", "intern"]'>
-				<div class="folio-img">
-					<div class="portfolio-item">
-						<div class="thumbnail">
-						<div class="thumb-img">
-						<div class="link-attr">
-						    <a href="img/portfolio/altpath.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Alternate Paths between nodes in massive Road Networks" class="link-search animated linear"><i class="fa fa-search"></i></a>
-						   <a href="projects.html#inria" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
-					   </div>
-						 <img class="linear img-portfolio img-responsive" src="img/portfolio/altpath.jpg" alt="Real Word Road Networks">
-						   <div class="link"><a href="#">This Is Folio Link3</a></div>
-						   <div class="folio-caption">
-						   <i class="fa fa-caret-up"></i>
-					       <p>Alternate Paths in Road Networks</p>
-					       </div>
-					       </div>
-						</div>
-					    
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 box" data-groups='["all", "intern"]'>
-				<div class="folio-img">
-					<div class="portfolio-item">
-						<div class="thumbnail">
-						<div class="thumb-img">
-						<div class="link-attr">
-						    <a href="img/portfolio/socnet.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Feature Representations of Social Networks" class="link-search animated linear"><i class="fa fa-search"></i></a>
-						   <a href="projects.html#inria" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
-					   </div>
-						<img class="linear img-portfolio img-responsive" src="img/portfolio/socnet.jpg" alt="Feature Representations of Social Networks">
-						  <div class="link"><a href="#">This Is Folio Link4</a></div>
-						  <div class="folio-caption">
-						  <i class="fa fa-caret-up"></i>
-					       <p>Social Networks</p>
-					       </div>
-					     </div>
-						</div>
-					
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 box" data-groups='["all", "project"]'>
-				<div class="folio-img">
-					<div class="portfolio-item">
-						<div class="thumbnail">
-							<div class="thumb-img">
-								<div class="link-attr">
-								    <a href="img/portfolio/nachos.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="NachOS Operating System" class="link-search animated linear"><i class="fa fa-search"></i></a>
-								    <a href="projects.html#nachos" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
-							    </div>
-								
-								<img class="linear img-portfolio img-responsive" src="img/portfolio/nachos.jpg" alt="NachOS">
-								
-								<div class="folio-caption">
-									<i class="fa fa-caret-up"></i>
-							        <p>NachOS Operating System</p>
-							    </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 box" data-groups='["all", "project"]'>
-				<div class="folio-img">
-					<div class="portfolio-item">
-						<div class="thumbnail">
-							<div class="thumb-img">
-								<div class="link-attr">
-								    <a href="img/portfolio/geodata.png" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Re-Invention of Efficient Geometric Data Structures" class="link-search animated linear"><i class="fa fa-search"></i></a>
-								    <a href="projects.html#geodata" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
-							    </div>
-								
-								<img class="linear img-portfolio img-responsive" src="img/portfolio/geodata.png" alt="Geometric Data Structures">
-								
-								<div class="folio-caption">
-									<i class="fa fa-caret-up"></i>
-							        <p>Geometric Data Structures</p>
-							    </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 box" data-groups='["all", "project"]'>
-				<div class="folio-img">
-					<div class="portfolio-item">
-						<div class="thumbnail">
-							<div class="thumb-img">
-								<div class="link-attr">
-								    <a href="img/portfolio/emodet.png" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Detection of Emotions using Multiple Modes" class="link-search animated linear"><i class="fa fa-search"></i></a>
-								    <a href="projects.html#emodet" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
-							    </div>
-								
-								<img class="linear img-portfolio img-responsive" src="img/portfolio/emodet.png" alt="Emotion Detection">
-								
-								<div class="folio-caption">
-									<i class="fa fa-caret-up"></i>
-							        <p>MultiModal Emotion Detection</p>
-							    </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 box" data-groups='["all", "project"]'>
-				<div class="folio-img">
-					<div class="portfolio-item">
-						<div class="thumbnail">
-							<div class="thumb-img">
-								<div class="link-attr">
-								    <a href="img/portfolio/newsrep.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="News Report Classification" class="link-search animated linear"><i class="fa fa-search"></i></a>
-								    <a href="projects.html#newsrep" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
-							    </div>
-								
-								<img class="linear img-portfolio img-responsive" src="img/portfolio/newsrep.jpg" alt="News Report Classification">
-								
-								<div class="folio-caption">
-									<i class="fa fa-caret-up"></i>
-							        <p>News Report Classification</p>
-							    </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		  
-		    </div>
-		  
-		    </div>
-		  	</div><!-- end folio content -->
-		  	</div><!-- end col -->
-	    </div>
+
+            <!-- - Visual Question Answering using Semantic Attention    (Deep, CV)  (fig done) -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "deep", "cv"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item ">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/vqa.png" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Visual Question Answering using Semantic Attention" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                   <a href="projects.html#" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/vqa.png" alt="Visual Question Answering">
+                                
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                        <p>Visual Question Answering</p>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+
+            <!-- - Real Time Vehicle Recognition and Automatic Number Plate Recognition  (CV)    (fig done) -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "cv"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item ">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/vehicle.png" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Real Time Vehicle Recognition and Automatic Number Plate Recognition" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                   <a href="projects.html#" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/vehicle.png" alt="Real Time Vehicle Recognition and Automatic Number Plate Recognition">
+                                
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                        <p>RT Vehicle Recognition</p>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+
+            <!-- - Visual Story Telling  (Deep, CV, NLP) (fig done) -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "deep", "cv", "nlp"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item ">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/story.png" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Visual Story Telling" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                   <a href="projects.html#" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/story.png" alt="Visual Story Telling">
+                               
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                        <p>Visual Story Telling</p>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+
+            <!-- - Merging Point Clouds  (Intern, CV)    (fig done) -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "intern", "cv"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item ">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/pcloud.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Merging Point Clouds" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                   <a href="projects.html#" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/pcloud.jpg" alt="Merging Point Clouds">
+                                
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                        <p>Merging Point Clouds</p>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+
+            <!-- - Predicting Human Arm Reach    (Intern, CV)    (fig done) -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "intern", "cv"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item ">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/caris.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Predicting Human Arm Reach" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                   <a href="projects.html#" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/caris.jpg" alt="Predicting Human Arm Reach">
+                                
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                        <p>Predicting Human Arm Reach</p>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+
+            <!-- - Adaptive Strategies for Prisoner's Dillema    (Other) (fig done) -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "other"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item ">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/ipd.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Adaptive Strategies for Prisoner's Dillema" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                   <a href="projects.html#" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/ipd.jpg" alt="Adaptive Strategies for Prisoner's Dillema">
+                                
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                        <p>Adaptive Strategies for IPD</p>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+
+            <!-- - Chalearn Personality Trait Analysis   (Deep, CV)  (Fig done) -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "deep", "cv"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item ">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/chalearn.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Personality Trait Analysis" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                   <a href="projects.html#" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/chalearn.jpg" alt="Chalearn Personality Trait Analysis">
+                               
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                        <p>Personality Trait Analysis</p>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+
+            <!-- - ADA Compiler  (Other) (fig done) -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "other"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item ">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/ada.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="ADA Compiler" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                   <a href="projects.html#" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/ada.jpg" alt="ADA Compiler">
+                                
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                        <p>ADA Compiler</p>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+
+            <!-- AdaScan: Adaptive Scan Pooling for Action Recognition (Deep, CV) -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "deep", "cv"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item ">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/adascan.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="AdaScan: Adaptive Scan Pooling" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                   <a href="projects.html#" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/adascan.jpg" alt="AdaScan: Adaptive Scan Pooling">
+                               
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                        <p>Adaptive Scan Pooling</p>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multi View clustering using NMF -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "intern", "other"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item ">
+                        <div class="thumbnail">
+                           <div class="thumb-img">
+                          
+                          <div class="link-attr">
+                                <a href="img/portfolio/mvc.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Multi View Clustering using NMF" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                               <a href="projects.html#xrci" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                           </div>
+                            <img class="linear img-portfolio img-responsive" src="img/portfolio/mvc.jpg" alt="Multi View Clustering">
+                          
+                           
+                           <div class="folio-caption">
+                           <i class="fa fa-caret-up"></i>
+                               <p>Multi View Clustering</p>
+                              
+                           </div>
+                           </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- - Computer Networks (Proxy, etc)    (Other) (fig done) -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "other"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item ">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/networks.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Computer Networks Course Project" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                   <a href="projects.html#" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/networks.jpg" alt="Computer Networks Course Project">
+                                
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                        <p>CS425A Course Project</p>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estimating and Computing Multiple senses of a word -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "nlp"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item">
+                        <div class="thumbnail">
+                        <div class="thumb-img">
+                         <div class="link-attr">
+                            <a href="img/portfolio/multivec.png" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Estimating and Computing Multiple senses of a word" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                           <a href="projects.html#multivec" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                       </div>
+                        <img class="linear img-portfolio img-responsive" src="img/portfolio/multivec.png" alt="Word Embeddings using multiple prototypes">
+                         <div class="link"><a href="#">This Is Folio Link2</a></div>
+                        <div class="folio-caption">
+                        <i class="fa fa-caret-up"></i>
+                           <p>Multiple Word Embeddings</p>
+                       </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alternate Paths between nodes in massive Road Networks -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "intern", "algo"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item">
+                        <div class="thumbnail">
+                        <div class="thumb-img">
+                        <div class="link-attr">
+                            <a href="img/portfolio/altpath.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Alternate Paths between nodes in massive Road Networks" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                           <a href="projects.html#inria" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                       </div>
+                         <img class="linear img-portfolio img-responsive" src="img/portfolio/altpath.jpg" alt="Real Word Road Networks">
+                           <div class="link"><a href="#">This Is Folio Link3</a></div>
+                           <div class="folio-caption">
+                           <i class="fa fa-caret-up"></i>
+                           <p>Alternate Paths in Graphs</p>
+                           </div>
+                           </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Representations of Social Networks -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "intern", "algo"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item">
+                        <div class="thumbnail">
+                        <div class="thumb-img">
+                        <div class="link-attr">
+                            <a href="img/portfolio/socnet.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Feature Representations of Social Networks" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                           <a href="projects.html#inria" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                       </div>
+                        <img class="linear img-portfolio img-responsive" src="img/portfolio/socnet.jpg" alt="Feature Representations of Social Networks">
+                          <div class="link"><a href="#">This Is Folio Link3</a></div>
+                          <div class="folio-caption">
+                          <i class="fa fa-caret-up"></i>
+                           <p>Social Networks</p>
+                           </div>
+                         </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- NachOS Operating System -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "other"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/nachos.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="NachOS Operating System" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                    <a href="projects.html#nachos" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/nachos.jpg" alt="NachOS">
+                                
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                    <p>NachOS Operating System</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Re-Invention of Efficient Geometric Data Structures -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "algo"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/geodata.png" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Re-Invention of Efficient Geometric Data Structures" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                    <a href="projects.html#geodata" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/geodata.png" alt="Geometric Data Structures">
+                                
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                    <p>Geometric Data Structures</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detection of Emotions using Multiple Modes -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "cv"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/emodet.png" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="Multi Modal Emotion Recognition (Using Visual, Acoustic and Textual Info)" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                    <a href="projects.html#emodet" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/emodet.png" alt="Multi modal Emotion Detection">
+                                
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                    <p>Multi Modal Emotion Recog.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Report Classification -->
+            <div class="col-xs-12 col-sm-3 col-md-3 box" data-groups='["all", "nlp"]'>
+                <div class="folio-img">
+                    <div class="portfolio-item">
+                        <div class="thumbnail">
+                            <div class="thumb-img">
+                                <div class="link-attr">
+                                    <a href="img/portfolio/newsrep.jpg" data-gallery="global-gallery" data-parent="" data-toggle="lightbox" data-title="News Report Classification" class="link-search animated linear"><i class="fa fa-search"></i></a>
+                                    <a href="projects.html#newsrep" class="link-chain animated linear"><i class="fa  fa-chain"></i></a>
+                                </div>
+                                
+                                <img class="linear img-portfolio img-responsive" src="img/portfolio/newsrep.jpg" alt="News Report Classification">
+                                
+                                <div class="folio-caption">
+                                    <i class="fa fa-caret-up"></i>
+                                    <p>News Report Classification</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            </div>
+          
+            </div>
+            </div><!-- end folio content -->
+            </div><!-- end col -->
+        </div>
     </div><!--end container-->
 
     <!-- Internships -->
