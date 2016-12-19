@@ -566,15 +566,15 @@
 	        <div class="row">
 				<div class="col-md-4">
 		          <h5><b>THE INTERNSHIP</b></h5>
-		          <p class="desc">I interned at CARIS Lab, University of British Columbia during summers '16 through the MITACS internship programme. I was mentored by Justin Hart, Post Doc, CARIS Lab and Elizabeth Croft, Head, CARIS Lab, for prediction of single-arm reaching motion by humans in order to create smooth and safe Human-Robot interactions. The internship involved training in ROS (Robot Operating System) working on several robot platforms, including a Barrett WAM 7-DOF Robot and the Willow Garage PR2 Robot.</p>
+		          <p class="desc">I interned at CARIS Lab, University of British Columbia during summers '16 through the MITACS internship programme. I was mentored by Justin Hart, Post Doc, CARIS Lab and Elizabeth Croft, Head, CARIS Lab, for prediction of single-arm reaching motion by humans in order to create smooth and safe Human-Robot interactions. The internship involved training in ROS (Robot Operating System) and working on several robot platforms, including a Barrett WAM 7-DOF Robot and the Willow Garage PR2 Robot.</p>
 		        </div><!--/col-md-4-->
 		        <div class="col-md-4">
 		          <h5><b>SINGLE-ARM REACH PREDICTION</b></h5>
-		          <p class="desc">The main project I worked on was related to prediction of single arm motion by humans to create smooth human robot interactions, and was mentored by Justing Hart and Elizabeth Croft. It involved studying and analyzing the performance of multiple Hand and Model trackers and the possibility of their inclusion in our pipeline. I also developed multiple interfaces to be used in the experimental setup for the final Human subject experiments.</p>
+		          <p class="desc">The main project I worked on was related to prediction of single arm motion by humans to create smooth human robot interactions, and was mentored by Justing Hart and Elizabeth Croft. It involved studying and analyzing the performance of multiple Hand and Model trackers and their inclusion in our pipeline. I also developed multiple interfaces to be used in the experimental setup for the final Human subject experiments.</p>
 		        </div><!--/col-md-4-->
 		        <div class="col-md-4">
 		          <h5><b>MERGING POINT CLOUDS</b></h5>
-		          <p class="desc"> The project aims at merging unaligned point clouds from multiple kinects to gain additional information, and was mentored by Justin Hart, Post Doc, CARIS Lab. It involved a literature survey on existing work for Camera Calibration and Distortion reduction in cameras. Averaging using Rodriguez representation along with Bundle Adjustment was performed to improve the results. A transformation between the Kinects was computed using the extracted camera parameters, which was further used to align the Point Clouds.</p>
+		          <p class="desc"> The project aims at merging unaligned point clouds from multiple kinects to gain additional information, and was mentored by Justin Hart, Post Doc, CARIS Lab. It involved a literature survey on existing work for Camera Calibration and Distortion reduction in cameras. A transformation between the Kinects was computed using the extracted camera parameters, which was further used to align the Point Clouds. Averaging using Rodriguez representation along with Bundle Adjustment was performed to improve the results.</p>
 	        	</div><!--/col-md-4-->
 	      	</div><!--/row-->
 
@@ -592,7 +592,6 @@
 
 	    </div>
     </div>
-
 
     <!-- XRCI -->
     <div id="xrci" class="page clearfix">
@@ -708,7 +707,7 @@
     </div><!--end container-->
 
     <!-- AdaScan -->
-    <div id="multivec" class="page clearfix">
+    <div id="adascan" class="page clearfix">
 		<div class="container ptb">        
 	      	<div class="row">
 			<div class="col-md-12  col-md-offset-0">
@@ -768,17 +767,115 @@
 	    </div>
     </div>
 
-    <!-- Partial Multi View Clustering -->
-    <div id="gpmvc" class="page clearfix">
-		<div class="container ptb">        
-	      	<div class="row">
-			<div class="col-md-12  col-md-offset-0">
-		    		<div class="build title-page">
-						<h2 class="text-center">Partial Multi-View Clustering Using Graph Regularized NMF</h2>	
-							<div class="line-title bg-primary"></div>
-					</div>
-			 	</div><!-- end col -->
-			</div><!-- end row -->
+    <!-- Visual Story Telling -->
+    <div id="story" class="page clearfix">
+        <div class="container ptb">        
+            <div class="row">
+            <div class="col-md-10  col-md-offset-1">
+                    <div class="build title-page">
+                        <h2 class="text-center">Visual Story Telling</h2> 
+                            <div class="line-title bg-primary"></div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <div class="row">
+                <div class="col-md-4">
+                  <h5><b>THE PROJECT</b></h5>
+                  <p class="desc">This was a course project in the course CS698A: Recent Advances in Computer Vision, under Prof. Gaurav Sharma. Visual Story telling is relatively new task with hardly any prior work. The task involves mapping sequential images to sequential, human like, narrative descriptive sentences or ’stories’. Simply put, it involves understanding a sequence of images and trying to explain its contents in a story like manner. The problem was introduced recently along with a newly constructed dataset (released by MSR).</p>
+                </div><!--/col-md-4-->
+                <div class="col-md-5">
+                  <h5><b>PROJECT DESCRIPTION</b></h5>
+                  <p class="desc">The project deals with the task of visual story telling i.e. constructing narratives given sequential images. In our approach, we encode the image sequence by passing it through a GRU. This is used as the initial hidden state of the story decoder network, which is also modelled as a GRU. Finally, beam search is used to produce the story for each sequence. Specific heuristics are also discussed to further improve performance. We work with a newly constructed dataset released by MSR which consists of around 80k images in 20k sequences. We use METEOR and BLEU scores as evaluation metrics for this task. The code repository is hosted at GitHub.</p>
+                </div><!--/col-md-4-->
+                <div class="col-md-3">
+                  <h5><b>THE RESULTS</b></h5>
+                  <p class="desc"> Although the metrics used (METEOR and BLEU) correlate well with human judgements, their ineffectiveness in such a task is notable. They often fail to assign accurate scores to the generated stories, mainly due to the numerous 'correct' stroies for each image sequence. Other qualitative results are provided in the report and presentation.</p>
+                </div><!--/col-md-4-->
+            </div><!--/row-->
+
+            <div class="row">
+            <br><br>
+            <center><img src="img/details/story_example.jpg" alt="Results" style="width: 75%; height: 75%"></center>
+            <br><br><br>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <center><a href="resources/cs698_presentation.pdf" class="btn btn-clear btn-lg border-color linear hire">PRESENTATION</a></center>   
+                </div><!--/col-md-4-->
+                <div class="col-md-4">
+                    <center><a href="resources/cs698_report.pdf" class="btn btn-clear btn-lg border-color linear hire">REPORT</a></center>
+                </div><!--/col-md-4-->
+                <div class="col-md-4">
+                    <center><a href="#" class="btn btn-clear btn-lg border-color linear hire">CODE REPOSITORY</a></center>   
+                </div><!--/col-md-4-->         
+            </div><!--/row-->
+
+            <br>
+        </div>
+    </div>
+
+    <!-- Visual Question Answering via Semantic Attention-->
+    <div id="vqa" class="page clearfix">
+        <div class="container ptb">        
+            <div class="row">
+            <div class="col-md-10  col-md-offset-1">
+                    <div class="build title-page">
+                        <h2 class="text-center">Visual Question Answering via Semantic Attention</h2> 
+                            <div class="line-title bg-primary"></div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <div class="row">
+                <div class="col-md-4">
+                  <h5><b>THE PROJECT</b></h5>
+                  <p class="desc">This was a course project in the course CS676A: Computer Vision and Image Processing, under Prof. Vinay Namboodiri. The project deals with the problem of Visual Question Answering. We propose several models to tackle the problem consisting of models consisting of Bag of Words, and deep networks (such as CNNs and LSTMs). We also explore the role of attention in improving the performance of the model. The dataset used is the popular VQA dataset based on MS COCO.</p>
+                </div><!--/col-md-4-->
+                <div class="col-md-4">
+                  <h5><b>PROJECT DESCRIPTION</b></h5>
+                  <p class="desc">The project deals with the task of visual question answering i.e. building a system capable of answering open ended questions on real world images. In our approach, we first compute a representation of the question by using word vectors. We encode the image by taking the activations of VGG-16. These represenations are then used to compute the answer. We study the effect of attention models on the performance of the system. More details are present in the report.</p>
+                </div><!--/col-md-4-->
+                <div class="col-md-4">
+                  <h5><b>THE RESULTS</b></h5>
+                  <p class="desc"> We use the VQA dataset based on the popular MS COCO image dataset. It currently has 360K questions on 120K images. All the questions are human-generated, and were specifically designed to stump a 'smart robot'. We find that although attention based do not provide competitive performance, they are able to get a few tough questions correct. Other qualitative results are provided in the report and presentation.</p>
+                </div><!--/col-md-4-->
+            </div><!--/row-->
+
+            <div class="row">
+            <br><br>
+            <center><img src="img/details/vqa_model.jpg" alt="Proposed Models" style="width: 90%; height: 90%"></center>
+            <br><br><br>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <center><a href="resources/cs676_poster.pdf" class="btn btn-clear btn-lg border-color linear hire">POSTER</a></center>   
+                </div><!--/col-md-4-->
+                <div class="col-md-4">
+                    <center><a href="resources/cs676_report.pdf" class="btn btn-clear btn-lg border-color linear hire">REPORT</a></center>
+                </div><!--/col-md-4-->
+                <div class="col-md-4">
+                    <center><a href="#" class="btn btn-clear btn-lg border-color linear hire">CODE REPOSITORY (SOON)</a></center>   
+                </div><!--/col-md-4-->         
+            </div><!--/row-->
+
+            <br>
+        </div>
+    </div>
+
+    <!-- Chalearn Personality Trait Analysis -->
+    <div id="chalearn" class="page clearfix">
+        <div class="container ptb">        
+            <div class="row">
+            <div class="col-md-12  col-md-offset-0">
+                    <div class="build title-page">
+                        <h2 class="text-center">Bi-modal Regression for Apparent Personality Trait Recognition</h2>    
+                            <div class="line-title bg-primary"></div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
 
         <div class="container">
            <div class="row panel-default">
@@ -788,47 +885,39 @@
                   <h4>
                     <strong>Abstract:</strong>
                   </h4>
-                  <p class="desc"> Real-world datasets consist of data representations (views) from different sources which often provide information complementary to each other. Multi-view learning algorithms aim at exploiting the complementary information present in different views for clustering and classification tasks. Several multi-view clustering methods that aim at partitioning objects into clusters based on multiple representations of the object have been proposed. Almost all of the proposed methods assume that each example appears in all views or at least there is one view containing all examples. In real-world settings this assumption might be too restrictive. Recent work on Partial View Clustering addresses this limitation by proposing a Non-negative Matrix Factorization based approach called PVC. Our work extends the PVC work in two directions. First, the current PVC algorithm is designed specifically for two-view datasets. We extend this algorithm for the k partial-view scenario. Second, we extend our k partial-view algorithm to include view specific graph laplacian regularization. This enables the proposed algorithm to exploit the intrinsic geometry of the data distribution in each view. The proposed method, which is referred to as GPMVC (Graph Regularized Partial Multi-View Clustering), is compared against 7 baseline methods (including PVC) on 5 publicly available text and image datasets. In all settings the proposed GPMVC method outperforms all baselines. For the purpose of reproducibility, we provide access to our code.
+                  <p class="desc"> The task of the ChaLearn Apparent Personality Analysis: First Impressions Challenge is to rate/quantify personality traits of users in short video sequences. Although the validity of personality judgments from short interactions is questionable, studies show the possibility of predicting attributed traits (First Impressions) using facial and acoustic features. The challenge introduces a newly constructed dataset which consists of manually annotated videos collected from YouTube. In this paper, we present our approach for predicting traits by combining multiple modality specific models. Our models include Deep Networks which focus on leveraging visual information in the given faces, Networks focusing on supplementary information from the background and models using acoustic features. We also discuss another approach for modeling traits as a combination of global and trait-specific variables. We explore methods for extracting fixed length descriptors of videos based on frame-level predictions. We also experiment with various methods for fusing model predictions. We observe that fusion achieves a considerable gain in accuracy over the best stand-alone model, possibly due to utilizing information from all modalities. The proposed method achieves an accuracy gain of approximately 18% above the provided challenge baseline.
                   </p>
                   <br>
 
                     <h4>
-                    	<strong>Results:</strong>
-                    </h4>
-
-                    <br>
-
-				    <img src="img/details/nmf_results.jpg" alt="GPMVC Results">
-              
-				    <br><br>
-
-                    <h4>
-                    	<strong>Relevant Links:</strong>
+                        <strong>Relevant Links:</strong>
                     </h4>
 
                     <br><br>
 
-				   	<!-- External Links -->
-			      	<div class="row">
-					  	<div class="col-md-4">
-				      		<center><a href=# class="btn btn-clear btn-lg border-color linear hire">ORAL PRESENTATION</a></center>	
-						</div>
-					  	<div class="col-md-4">
-				      		<center><a href=# class="btn btn-clear btn-lg border-color linear hire">PAPER</a></center>
-						</div>
-			          	<div class="col-md-4">
-				      		<center><a href=# class="btn btn-clear btn-lg border-color linear hire">CODE REPOSITORY</a></center>
-						</div>
-			      	</div><!--/row-->
-			      	<br>
+                    <!-- External Links -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <center><a href=# class="btn btn-clear btn-lg border-color linear hire">PRESENTATION</a></center>
+                        </div>
+                        <div class="col-md-4">
+                            <center><a href=# class="btn btn-clear btn-lg border-color linear hire">PAPER</a></center>
+                        </div>
+                        <div class="col-md-4">
+                            <center><a href=# class="btn btn-clear btn-lg border-color linear hire">CODE REPOSITORY</a></center>
+                        </div>
+                    </div><!--/row-->
+                    <br>
 
               </div>
             </div>
           </div>
         </div>
 
-	    </div>
+        </div>
     </div>
+
+<!-- - Real Time Vehicle Recognition and Automatic Number Plate Recognition  (CV)    (fig done) -->
 
     <!-- Word Embeddings Using Multiple Word Prototypes -->
     <div id="multivec" class="page clearfix">
@@ -884,6 +973,71 @@
 	    </div>
     </div>
 
+    <!-- Partial Multi View Clustering -->
+    <div id="gpmvc" class="page clearfix">
+        <div class="container ptb">        
+            <div class="row">
+            <div class="col-md-12  col-md-offset-0">
+                    <div class="build title-page">
+                        <h2 class="text-center">Partial Multi-View Clustering Using Graph Regularized NMF</h2>  
+                            <div class="line-title bg-primary"></div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+        <div class="container">
+           <div class="row panel-default">
+            <div class="col-md-10  col-md-offset-1">
+              <div class="panel-body">
+
+                  <h4>
+                    <strong>Abstract:</strong>
+                  </h4>
+                  <p class="desc"> Real-world datasets consist of data representations (views) from different sources which often provide information complementary to each other. Multi-view learning algorithms aim at exploiting the complementary information present in different views for clustering and classification tasks. Several multi-view clustering methods that aim at partitioning objects into clusters based on multiple representations of the object have been proposed. Almost all of the proposed methods assume that each example appears in all views or at least there is one view containing all examples. In real-world settings this assumption might be too restrictive. Recent work on Partial View Clustering addresses this limitation by proposing a Non-negative Matrix Factorization based approach called PVC. Our work extends the PVC work in two directions. First, the current PVC algorithm is designed specifically for two-view datasets. We extend this algorithm for the k partial-view scenario. Second, we extend our k partial-view algorithm to include view specific graph laplacian regularization. This enables the proposed algorithm to exploit the intrinsic geometry of the data distribution in each view. The proposed method, which is referred to as GPMVC (Graph Regularized Partial Multi-View Clustering), is compared against 7 baseline methods (including PVC) on 5 publicly available text and image datasets. In all settings the proposed GPMVC method outperforms all baselines. For the purpose of reproducibility, we provide access to our code.
+                  </p>
+                  <br>
+
+                    <h4>
+                        <strong>Results:</strong>
+                    </h4>
+
+                    <br>
+
+                    <img src="img/details/nmf_results.jpg" alt="GPMVC Results">
+              
+                    <br><br>
+
+                    <h4>
+                        <strong>Relevant Links:</strong>
+                    </h4>
+
+                    <br><br>
+
+                    <!-- External Links -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <center><a href=# class="btn btn-clear btn-lg border-color linear hire">PRESENTATION</a></center>   
+                        </div>
+                        <div class="col-md-4">
+                            <center><a href=# class="btn btn-clear btn-lg border-color linear hire">PAPER</a></center>
+                        </div>
+                        <div class="col-md-4">
+                            <center><a href=# class="btn btn-clear btn-lg border-color linear hire">CODE REPOSITORY</a></center>
+                        </div>
+                    </div><!--/row-->
+                    <br>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+    </div>
+
+<!-- - Computer Networks (Proxy, etc)    (Other) (fig done)
+- ADA Compiler  (Other) (fig done)
+ -->
     <!-- NachOS Operating System -->
     <div id="nachos" class="page clearfix">
 		<div class="container ptb">        
@@ -910,6 +1064,8 @@
 	    </div>
     </div>
 
+<!-- - Adaptive Strategies for Prisoner's Dillema    (Other) (fig done)
+ -->
     <!-- Geometric Data Structures -->
     <div id="geodata" class="page clearfix">
 		<div class="container ptb">        
@@ -1022,6 +1178,8 @@
 	      	<br>
 	    </div>
     </div>
+
+<!-- - Other Projects -->
 
     <!--contact-->
     <div id="contact" class="page page-bgcolor">
