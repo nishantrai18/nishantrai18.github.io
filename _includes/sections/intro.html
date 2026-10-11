@@ -1,0 +1,18 @@
+<section id="about" class="intro" aria-labelledby="site-title">
+  <div class="profile-card">
+    <figure class="portrait">
+      <img src="{{ site.data.profile.portrait | relative_url }}" alt="Nishant Rai" width="767" height="767" fetchpriority="high">
+    </figure>
+    <div class="profile-links" id="contact" aria-label="Find me online">
+      {% for link in site.data.profile.links %}
+        <a href="{{ link.url | escape }}" class="profile-link profile-link--{{ link.id | escape }}" aria-label="{{ link.label | escape }}">{% include icon.html name=link.id %}<span class="profile-tooltip" aria-hidden="true">{{ link.label | escape }}</span></a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="bio" id="aboutMore">
+    <p class="personal-statement">{{ site.data.profile.statement | escape }}</p>
+    {% for paragraph in site.data.profile.bio %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,140 @@
+# Work descriptions characterize the linked project, not individual ownership.
+# Attribution and new content notes: research/content-refinement-2026-10-10.json.
+# Waymo article split and image provenance: research/waymo-work-sources.json.
+- organization: OpenAI
+  period: 2025–2026
+  items:
+    - id: gpt-6-astra
+      title: GPT-6 Astra
+      official_title: "GPT-6 Astra: A new generation of intelligence"
+      image: /assets/images/work/gpt6-astra.webp
+      image_fit: contain
+      image_theme: dark
+      image_alt: Official GPT-6 Astra announcement artwork.
+      description: Reasoning & scientific work
+      year: 2026
+      url: https://openai.com/index/gpt-6-astra/
+      links:
+        - label: Announcement
+          url: https://openai.com/index/gpt-6-astra/
+        - label: Intelligent UI
+          url: https://openai.com/index/gpt-6-for-everyone/
+    - id: gpt-5-6
+      title: GPT-5.6
+      official_title: "GPT-5.6: Frontier intelligence that scales with your ambition"
+      image: /assets/images/work/gpt56.webp
+      image_fit: contain
+      image_theme: dark
+      image_alt: Official GPT-5.6 launch artwork.
+      description: Coding & professional work
+      year: 2026
+      url: https://openai.com/index/gpt-5-6/
+    - id: gpt-5-5
+      title: GPT-5.5
+      official_title: Introducing GPT-5.5
+      image: /assets/images/work/gpt55.webp
+      image_alt: Official GPT-5.5 launch artwork.
+      description: Planning & tool use
+      year: 2026
+      url: https://openai.com/index/introducing-gpt-5-5/
+    - id: gpt-5-4
+      title: GPT-5.4
+      official_title: Introducing GPT-5.4
+      image: /assets/images/work/gpt54.webp
+      image_alt: Official GPT-5.4 announcement artwork.
+      description: Reasoning & computer use
+      year: 2026
+      url: https://openai.com/index/introducing-gpt-5-4/
+    - id: gpt-5-2
+      title: GPT-5.2
+      official_title: Introducing GPT-5.2
+      image: /assets/images/work/gpt52.webp
+      image_alt: Official GPT-5.2 announcement artwork.
+      description: Long-running agents
+      year: 2025
+      url: https://openai.com/index/introducing-gpt-5-2/
+    - id: gpt-5
+      title: GPT-5
+      official_title: Introducing GPT-5
+      image: /assets/images/work/gpt5.webp
+      image_alt: Official GPT-5 launch artwork.
+      description: Unified reasoning
+      year: 2025
+      url: https://openai.com/index/introducing-gpt-5/
+    - id: o3
+      title: o3 & o4-mini
+      official_title: Introducing OpenAI o3 and o4-mini
+      image: /assets/images/work/o3.webp
+      image_alt: Official artwork accompanying the o3 and o4-mini launch.
+      description: Visual reasoning & tools
+      year: 2025
+      url: https://openai.com/index/introducing-o3-and-o4-mini/
+    - id: company-knowledge
+      title: Company knowledge
+      official_title: Work smarter with your company knowledge in ChatGPT
+      image: /assets/images/work/company-knowledge.webp
+      image_alt: Official ChatGPT company knowledge announcement artwork.
+      description: Answers from workplace sources
+      year: 2025
+      url: https://openai.com/index/introducing-company-knowledge/
+- organization: Waymo
+  period: Perception
+  items:
+    - id: demonstrably-safe-ai
+      title: Demonstrably safe AI
+      official_title: Demonstrably Safe AI For Autonomous Driving
+      image: /assets/images/work/waymo-safe-ai.png
+      image_alt: Official Waymo article artwork with an overhead vehicle view and the words Demonstrably Safe AI.
+      description: Driving, simulation & safety validation
+      year: 2025
+      url: https://waymo.com/blog/2025/12/demonstrably-safe-ai-for-autonomous-driving/
+    - id: waymo-foundation-model
+      title: Onboard VLM
+      official_title: "Behind the Innovation: AI & ML at Waymo"
+      image: /assets/images/work/waymo-ai.jpg
+      image_alt: A Waymo vehicle perceiving a pedestrian, from the AI and ML at Waymo article introducing the Waymo Foundation Model.
+      description: World knowledge meets autonomous driving
+      year: 2024
+      url: https://waymo.com/blog/2024/10/ai-and-ml-at-waymo/
+      links:
+        - label: Patent application
+          url: https://patents.google.com/patent/US20260138621A1/en
+    - id: human-keypoints
+      title: Human keypoints
+      official_title: Utilizing key point and pose estimation for the task of autonomous driving
+      image: /assets/images/work/keypoints.jpg
+      image_alt: Waymo’s visualization of people and their poses alongside the vehicle’s road view.
+      year: 2022
+      link_label: Article
+      description: Human movement & intent
+      detail: Article · 2022
+      url: https://waymo.com/blog/2022/02/utilizing-key-point-and-pose-estimation/
+- organization: Research
+  period: Video understanding
+  items:
+    - id: home-action-genome
+      title: Home Action Genome
+      official_title: "Home Action Genome: Cooperative Compositional Action Understanding"
+      image: /assets/images/homage.png
+      image_alt: Synchronized views of daily activities in the Home Action Genome dataset.
+      description: Actions across views & modalities
+      year: 2021
+      url: https://homeactiongenome.org/
+      links:
+        - label: Project
+          url: https://homeactiongenome.org/
+        - label: Paper
+          url: https://arxiv.org/abs/2105.05226
+    - id: cocon
+      title: CoCon
+      official_title: "CoCon: Cooperative-Contrastive Learning"
+      image: /assets/images/cocon.png
+      image_alt: RGB, optical-flow, and pose representations used for cooperative contrastive learning.
+      description: Multimodal video representations
+      year: 2021
+      url: https://arxiv.org/abs/2104.14764
+      links:
+        - label: Paper
+          url: https://arxiv.org/abs/2104.14764
+        - label: Code
+          url: https://github.com/nishantrai18/cocon

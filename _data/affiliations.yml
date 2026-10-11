@@ -1,0 +1,47 @@
+# Original logo row, with the current OpenAI affiliation added.
+# Roles and sources: research/legacy-site-sources.json.
+- id: openai
+  name: OpenAI
+  context: Current affiliation
+  icon: openai
+  url: https://openai.com/
+- id: waymo
+  name: Waymo
+  context: Former tech lead, perception
+  icon: waymo
+  url: https://waymo.com/
+- id: nuro
+  name: Nuro
+  context: ML perception intern, 2020
+  image: /assets/images/affiliations/nuro.png
+  width: 200
+  height: 200
+  url: https://www.nuro.ai/
+- id: fyusion
+  name: Fyusion
+  context: Computer vision intern, 2019
+  image: /assets/images/affiliations/fyusion.png
+  width: 200
+  height: 200
+  url: https://fyusion.com/
+- id: rubrik
+  name: Rubrik
+  context: Software developer, 2017–2019
+  image: /assets/images/affiliations/rubrik.png
+  width: 522
+  height: 521
+  url: https://www.rubrik.com/
+- id: stanford
+  name: Stanford
+  context: MS in Computer Science; Stanford Vision and Learning Lab
+  image: /assets/images/affiliations/stanford.png
+  width: 1200
+  height: 1833
+  url: https://svl.stanford.edu/
+- id: iitk
+  name: IIT Kanpur
+  context: BTech in Computer Science, 2017
+  image: /assets/images/affiliations/iitk.gif
+  width: 1000
+  height: 1000
+  url: https://www.iitk.ac.in/

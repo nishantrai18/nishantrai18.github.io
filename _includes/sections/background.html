@@ -1,0 +1,39 @@
+<section id="background" class="section background" aria-labelledby="background-title">
+  <div class="section-heading section-heading--ruled">
+    <h2 id="background-title">{% include icon.html name='education' %}Education &amp; Recognition</h2>
+  </div>
+  <div class="background-grid">
+    <div class="education-list">
+      {% for entry in site.data.background.education %}
+      {% assign institution = site.data.affiliations | where: 'id', entry.id | first %}
+      <article class="education-entry">
+        <a class="education-mark education-mark--{{ entry.id | escape }}" href="{{ institution.url | escape }}" aria-label="{{ entry.institution | escape }}">
+          <img src="{{ institution.image | relative_url }}" alt="" width="{{ institution.width }}" height="{{ institution.height }}" loading="lazy" decoding="async">
+        </a>
+        <h3>{{ entry.short_name | default: entry.institution | escape }}</h3>
+        <p>{{ entry.degree | escape }}</p>
+        {% if entry.gpa %}<p class="education-gpa">GPA {{ entry.gpa | escape }}</p>{% endif %}
+        {% if entry.distinction %}<a class="education-distinction" href="{{ entry.url | escape }}">{{ entry.distinction | escape }}</a>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    <ul class="recognition-list" aria-label="Recognition and teaching" role="list">
+      {% for entry in site.data.background.highlights %}
+      <li class="recognition-item">
+        {% include icon.html name=entry.icon %}
+        {% if entry.links %}
+        <span class="recognition-links">
+          {% for link in entry.links %}{% unless forloop.first %}<span aria-hidden="true"> &amp; </span>{% endunless %}<a href="{{ link.url | escape }}" aria-label="{{ link.label | escape }}, {{ entry.context | escape }}">{{ link.label | escape }}</a>{% endfor %}
+        </span>
+        {% elsif entry.url %}
+        <a class="recognition-link" href="{{ entry.url | escape }}"{% if entry.context %} aria-label="{{ entry.title | escape }}, {{ entry.context | escape }}"{% endif %}>{{ entry.title | escape }}</a>
+        {% else %}
+        <span class="recognition-title">{{ entry.title | escape }}</span>
+        {% endif %}
+        {% if entry.context %}<span class="recognition-context">{{ entry.context | escape }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% include service.html %}
+</section>

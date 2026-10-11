@@ -1,0 +1,177 @@
+# Bibliographic metadata checked against CVF proceedings and author sources on 2026-10-08.
+# Full source notes: research/profile-sources.json.
+
+- id: "gpt-5-system-card"
+  title: "GPT-5 System Card"
+  authors: ["OpenAI"]
+  contributors: ["Nishant Rai"]
+  year: 2025
+  venue: "System card"
+  selected: true
+  description: "Capabilities, safety evaluations, and mitigations for the GPT-5 model family."
+  image: "/assets/images/work/gpt5.webp"
+  image_alt: "Official OpenAI artwork for GPT-5."
+  paper: "https://arxiv.org/abs/2601.03267"
+  pdf: "https://arxiv.org/pdf/2601.03267"
+  project: "https://openai.com/index/gpt-5-system-card/"
+  contributor_source: "https://arxiv.org/abs/2601.03267"
+  bibtex: |
+    @techreport{openai2025gpt5,
+      author = {{OpenAI}},
+      title = {{GPT-5} System Card},
+      institution = {OpenAI},
+      year = {2025},
+      month = {August},
+      type = {System card},
+      url = {https://openai.com/index/gpt-5-system-card/},
+      note = {Available as arXiv:2601.03267}
+    }
+
+- id: "homage"
+  title: "Home Action Genome: Cooperative Compositional Action Understanding"
+  authors:
+    - "Nishant Rai"
+    - "Haofeng Chen"
+    - "Jingwei Ji"
+    - "Rishi Desai"
+    - "Kazuki Kozuka"
+    - "Shun Ishizaka"
+    - "Ehsan Adeli"
+    - "Juan Carlos Niebles"
+  year: 2021
+  venue: "CVPR"
+  selected: true
+  description: "Learning compositional human actions from multiple views and modalities."
+  image: "/assets/images/homage.png"
+  image_alt: "Synchronized views of daily activities in the Home Action Genome dataset."
+  paper: "https://arxiv.org/abs/2105.05226"
+  pdf: "https://arxiv.org/pdf/2105.05226"
+  project: "https://homeactiongenome.org/"
+  code: "https://github.com/nishantrai18/homage"
+  bibtex: |
+    @inproceedings{rai2021home,
+      author = {Rai, Nishant and Chen, Haofeng and Ji, Jingwei and Desai, Rishi and Kozuka, Kazuki and Ishizaka, Shun and Adeli, Ehsan and Niebles, Juan Carlos},
+      title = {Home Action Genome: Cooperative Compositional Action Understanding},
+      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year = {2021},
+      pages = {11184--11193},
+      month = {June},
+      url = {https://arxiv.org/abs/2105.05226}
+    }
+
+- id: "cocon"
+  title: "CoCon: Cooperative-Contrastive Learning"
+  authors:
+    - "Nishant Rai"
+    - "Ehsan Adeli"
+    - "Kuan-Hui Lee"
+    - "Adrien Gaidon"
+    - "Juan Carlos Niebles"
+  year: 2021
+  venue: "CVPR Workshops"
+  selected: true
+  description: "Self-supervised video representations from RGB, motion, and pose."
+  image: "/assets/images/cocon.png"
+  image_alt: "RGB, optical-flow, and pose representations used for cooperative contrastive learning."
+  paper: "https://arxiv.org/abs/2104.14764"
+  pdf: "https://arxiv.org/pdf/2104.14764"
+  code: "https://github.com/nishantrai18/cocon"
+  bibtex: |
+    @inproceedings{rai2021cocon,
+      author = {Rai, Nishant and Adeli, Ehsan and Lee, Kuan-Hui and Gaidon, Adrien and Niebles, Juan Carlos},
+      title = {CoCon: Cooperative-Contrastive Learning},
+      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+      year = {2021},
+      pages = {3384--3393},
+      month = {June},
+      url = {https://arxiv.org/abs/2104.14764}
+    }
+
+- id: "surface-mapping"
+  title: "Weak Multi-View Supervision for Surface Mapping Estimation"
+  authors:
+    - "Nishant Rai"
+    - "Aidas Liaudanskas"
+    - "Srinivas Rao"
+    - "Rodrigo Ortiz Cayon"
+    - "Matteo Munaro"
+    - "Stefan Holzer"
+  equal_contribution:
+    - "Nishant Rai"
+    - "Aidas Liaudanskas"
+  year: 2021
+  venue: "CVPR Workshops"
+  selected: false
+  description: "Learning 3D shape and surface correspondence through consistency across views, without dense annotations."
+  image: /assets/images/surface-mapping.webp
+  image_alt: Airplane views and camera frustums illustrating multi-view geometric consistency for surface mapping.
+  paper: "https://arxiv.org/abs/2105.01388"
+  pdf: "https://arxiv.org/pdf/2105.01388"
+  bibtex: |
+    @inproceedings{rai2021surface,
+      author = {Rai, Nishant and Liaudanskas, Aidas and Rao, Srinivas and Cayon, Rodrigo Ortiz and Munaro, Matteo and Holzer, Stefan},
+      title = {Weak Multi-View Supervision for Surface Mapping Estimation},
+      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+      year = {2021},
+      pages = {2759--2768},
+      month = {June},
+      url = {https://arxiv.org/abs/2105.01388}
+    }
+
+- id: "adascan"
+  title: "AdaScan: Adaptive Scan Pooling in Deep Convolutional Neural Networks for Human Action Recognition in Videos"
+  short_title: "AdaScan: Adaptive Scan Pooling for Video Action Recognition"
+  authors:
+    - "Amlan Kar"
+    - "Nishant Rai"
+    - "Karan Sikka"
+    - "Gaurav Sharma"
+  equal_contribution:
+    - "Amlan Kar"
+    - "Nishant Rai"
+  year: 2017
+  venue: "CVPR"
+  selected: true
+  description: "Selecting informative frames for recognizing actions in video."
+  image: "/assets/images/adascan.jpg"
+  image_alt: "Video frames and the informative-frame weights learned by AdaScan."
+  paper: "https://arxiv.org/abs/1611.08240"
+  pdf: "https://arxiv.org/pdf/1611.08240"
+  project: "https://amlankar.github.io/publication/adascan/"
+  code: "https://github.com/amlankar/adascan-public"
+  bibtex: |
+    @inproceedings{kar2017adascan,
+      author = {Kar, Amlan and Rai, Nishant and Sikka, Karan and Sharma, Gaurav},
+      title = {AdaScan: Adaptive Scan Pooling in Deep Convolutional Neural Networks for Human Action Recognition in Videos},
+      booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year = {2017},
+      month = {July},
+      url = {https://arxiv.org/abs/1611.08240}
+    }
+
+- id: "gpmvc"
+  title: "Partial Multi-View Clustering using Graph Regularized NMF"
+  authors:
+    - "Nishant Rai"
+    - "Sumit Negi"
+    - "Santanu Chaudhury"
+    - "Om Deshmukh"
+  year: 2016
+  venue: "ICPR"
+  selected: false
+  description: "Clustering incomplete multi-view data using nonnegative matrix factorization and graph regularization."
+  image: /assets/images/gpmvc.webp
+  image_alt: Diagram mapping three data instances across four partially observed views, with forward and inverse mappings.
+  paper: "https://doi.org/10.1109/ICPR.2016.7899961"
+  pdf: "https://nishantrai18.github.io/resources/gpmvcICPR16.pdf"
+  code: "https://github.com/nishantrai18/MultiViewNMF"
+  bibtex: |
+    @inproceedings{rai2016partial,
+      author = {Rai, Nishant and Negi, Sumit and Chaudhury, Santanu and Deshmukh, Om},
+      title = {Partial Multi-View Clustering using Graph Regularized NMF},
+      booktitle = {2016 23rd International Conference on Pattern Recognition (ICPR)},
+      year = {2016},
+      pages = {2192--2197},
+      doi = {10.1109/ICPR.2016.7899961},
+      url = {https://doi.org/10.1109/ICPR.2016.7899961}
+    }

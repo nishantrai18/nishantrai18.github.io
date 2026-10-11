@@ -1,0 +1,25 @@
+title: Nishant Rai
+description: Researcher at OpenAI working on frontier models, retrieval, and organizational intelligence. Previously a perception tech lead at Waymo.
+lang: en
+url: "https://nishantrai18.github.io"
+baseurl: ""
+timezone: America/Los_Angeles
+markdown: kramdown
+strict_front_matter: true
+destination: _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - THIRD_PARTY_NOTICES.md
+  - research
+  - scripts
+  - vendor
+  - .local
+  - .bundle
+  - package.json
+  - package-lock.json
+  - node_modules
+  - tests
+  - structure

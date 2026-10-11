@@ -1,0 +1,14 @@
+{% comment %}Match balancedRows in site.js: put less crowded rows first.{% endcomment %}
+{% assign layout_breakpoints = 'wide:6,medium:4,tablet:3,mobile:2' | split: ',' %}
+{% for layout_breakpoint in layout_breakpoints %}
+  {% assign layout_settings = layout_breakpoint | split: ':' %}
+  {% assign layout_limit = layout_settings[1] | times: 1.0 %}
+  {% assign layout_rows = include.count | divided_by: layout_limit | ceil | at_least: 1 %}
+  {% assign layout_smaller_size = include.count | divided_by: layout_rows %}
+  {% assign layout_larger_rows = include.count | modulo: layout_rows %}
+  {% assign layout_smaller_rows = layout_rows | minus: layout_larger_rows %}
+  {% assign layout_smaller_items = layout_smaller_rows | times: layout_smaller_size %}
+  {% assign layout_row_size = layout_smaller_size %}
+  {% if include.index >= layout_smaller_items %}{% assign layout_row_size = layout_row_size | plus: 1 %}{% endif %}
+  --work-row-{{ layout_settings[0] }}: {{ layout_row_size | at_least: 1 }};
+{% endfor %}

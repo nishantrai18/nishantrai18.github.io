@@ -1,0 +1,77 @@
+# Public background and user-provided credentials; source notes are in research/.
+education:
+  - id: stanford
+    short_name: Stanford
+    institution: "Stanford University"
+    degree: "MS, Computer Science"
+    gpa: "4.17/4.0"
+    year: "2021"
+    distinction: "Distinction in Research"
+    url: "https://nishantrai18.github.io/resources/stanford_masters_thesis.pdf"
+    thesis_title: "Less is More: Video Understanding with Limited Supervision"
+    thesis_url: "https://nishantrai18.github.io/resources/stanford_masters_thesis.pdf"
+    source: "https://cs.stanford.edu/sites/default/files/CSCommencement2022.pdf"
+  - id: iitk
+    short_name: IIT Kanpur
+    institution: "IIT Kanpur"
+    degree: "BTech, Computer Science"
+    gpa: "9.9/10.0"
+    year: "2017"
+    url: "https://cse.iitk.ac.in/newsletter/NewsletterJuly2017V1I1.pdf"
+    source: "https://cse.iitk.ac.in/newsletter/NewsletterJuly2017V1I1.pdf"
+
+# GPAs, training-camp ranks and medal wording were supplied by Nishant on 2026-10-10.
+# No international team selection is inferred.
+highlights:
+  - title: "35 under 35: Self Driving"
+    icon: trophy
+    year: 2022
+    url: "https://www.businessinsider.com/self-driving-industry-rising-stars-2022-2022-2#nishant-rai-26-waymo-16"
+  - title: "Gold Medal: Best performance in batch"
+    icon: trophy
+    url: "https://cse.iitk.ac.in/newsletter/NewsletterJuly2017V1I1.pdf"
+  - title: IPhO training camp
+    context: Top 30 nationally
+    icon: atom
+  - title: IMO training camp
+    context: Top 6 nationally
+    icon: chart
+  - title: CS231n & CS145
+    context: Teaching assistant
+    icon: teaching
+    links:
+      - label: CS231n
+        url: https://cs231n.stanford.edu/2021/
+      - label: CS145
+        url: https://cs145-fa19.github.io/
+  - title: ESC101
+    context: Section leader
+    icon: teaching
+
+recognition:
+  - title: "35 under 35"
+    description: "Business Insider’s rising stars in self-driving."
+    organization: "Business Insider"
+    year: 2022
+    url: "https://www.businessinsider.com/self-driving-industry-rising-stars-2022-2022-2#nishant-rai-26-waymo-16"
+
+teaching:
+  - course: "CS231n · Visual Recognition"
+    description: "Teaching assistant, Stanford University."
+    role: "Teaching Assistant"
+    institution: "Stanford University"
+    years: "2020–21"
+    url: "https://cs231n.stanford.edu/2021/"
+    sources:
+      - "https://cs231n.stanford.edu/2020/"
+      - "https://cs231n.stanford.edu/2021/"
+
+# Verified against user-provided records; sanitized provenance: research/service-sources.json.
+service:
+  - role: Talks
+    description: BMVC
+    url: https://mvse.qub.ac.uk/activities/workshop/programme/
+  - role: Reviewing
+    description: WACV; workshops at CVPR, ICCV, NeurIPS, ICRA & BMVC.
+  - role: Committees
+    description: Workshops at CVPR, NeurIPS, ICRA & BMVC.
