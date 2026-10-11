@@ -1,0 +1,14 @@
+<dialog class="citation-dialog" id="citation-dialog" aria-labelledby="citation-heading" aria-describedby="citation-title">
+  <div class="dialog-header">
+    <h2 id="citation-heading">Cite this work</h2>
+    <button class="close-dialog" type="button" aria-label="Close citation">
+      {% include icon.html name="close" %}
+    </button>
+  </div>
+  <p class="citation-title" id="citation-title"></p>
+  <pre id="citation-text" tabindex="0" aria-label="BibTeX citation"></pre>
+  <div class="dialog-footer">
+    <span id="copy-status" role="status" aria-live="polite"></span>
+    <button class="copy-button" id="copy-citation" type="button">Copy BibTeX</button>
+  </div>
+</dialog>

@@ -1,0 +1,13 @@
+{% if site.data.background.service.size > 0 %}
+<details class="service-details">
+  <summary>Talks &amp; service {% include icon.html name='chevron' %}</summary>
+  <dl class="service-summary" aria-label="Talks and academic service">
+    {% for entry in site.data.background.service %}
+    <div class="service-item">
+      <dt>{{ entry.role | escape }}</dt>
+      <dd>{% if entry.url %}<a href="{{ entry.url | escape }}">{{ entry.description | escape }}</a>{% else %}{{ entry.description | escape }}{% endif %}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+</details>
+{% endif %}

@@ -1,0 +1,8 @@
+{% assign item = include.item %}
+<li class="work-card" data-category="{{ include.organization | slugify }}" data-work-id="{{ item.id | escape }}" style="{{ include.work_layout | strip_newlines | strip }}">
+  <div class="work-media{% if item.image_fit == 'contain' %} work-media--contain{% endif %}{% if item.image_theme == 'dark' %} work-media--dark{% endif %}">
+    <img src="{{ item.image | relative_url }}" alt="{{ item.image_alt | escape }}" width="640" height="280" loading="lazy" decoding="async">
+  </div>
+  <h3><a class="work-link" href="{{ item.url | escape }}">{{ item.title | escape }} {% include icon.html %}</a></h3>
+  <p class="work-description">{{ item.description | escape }}</p>
+</li>

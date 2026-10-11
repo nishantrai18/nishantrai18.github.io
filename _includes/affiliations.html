@@ -1,0 +1,13 @@
+<ul class="affiliations" aria-label="Work and education" role="list">
+  {% for affiliation in site.data.affiliations %}
+  <li>
+    <a class="affiliation affiliation--{{ affiliation.id | escape }}" href="{{ affiliation.url | escape }}" aria-label="{{ affiliation.name | escape }}: {{ affiliation.context | escape }}" title="{{ affiliation.name | escape }} — {{ affiliation.context | escape }}">
+      <span class="affiliation-mark">
+        {% if affiliation.image %}
+        <img src="{{ affiliation.image | relative_url }}" alt="" width="{{ affiliation.width }}" height="{{ affiliation.height }}" decoding="async">
+        {% else %}{% include icon.html name=affiliation.icon %}{% endif %}
+      </span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

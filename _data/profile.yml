@@ -1,0 +1,33 @@
+name: Nishant Rai
+role: Researcher
+affiliation: OpenAI
+statement: Building the machine that builds the machine.
+portrait: /assets/images/portrait.jpg
+bio:
+  - >-
+    I’m a researcher at <a href="https://openai.com/">OpenAI</a>, working on frontier
+    models including GPT-6, the GPT-5 series, and the o-series. My focus is on
+    retrieval, organizational intelligence, and teaching models to perform useful
+    work in private contexts. My work has spanned human action understanding in
+    video, perception for autonomous vehicles, and large-scale AI models.
+  - >-
+    Previously, I was a tech lead in perception at <a href="https://waymo.com/">Waymo</a>,
+    helping autonomous vehicles understand the most complex part of the road:
+    people. I studied computer science at <a href="#background">Stanford</a> and
+    <a href="#background">IIT Kanpur</a>, where my research focused on video
+    understanding and learning from visual data with limited supervision.
+  - >-
+    In a prior life, I spent time on competitive programming and algorithmic trading.
+links:
+  - id: scholar
+    label: Google Scholar
+    url: https://scholar.google.com/citations?user=akErVwcAAAAJ&hl=en
+  - id: linkedin
+    label: LinkedIn
+    url: https://www.linkedin.com/in/nishantrai18/
+  - id: github
+    label: GitHub
+    url: https://github.com/nishantrai18
+  - id: quora
+    label: Quora
+    url: https://www.quora.com/profile/Nishant-Rai-13

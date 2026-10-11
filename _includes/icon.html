@@ -1,0 +1,32 @@
+{%- case include.name -%}
+{%- when 'github' -%}{% include icons/github.svg %}
+{%- when 'quora' -%}{% include icons/quora.svg %}
+{%- when 'linkedin' -%}{% include icons/linkedin.svg %}
+{%- when 'openai' -%}{% include icons/openai.svg %}
+{%- when 'waymo' -%}{% include icons/waymo.svg %}
+{%- when 'scholar' -%}{% include icons/scholar.svg %}
+{%- when 'grid' -%}
+<svg class="icon icon--grid" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="9" height="9" rx="1.5"/><rect x="13" y="2" width="9" height="9" rx="1.5"/><rect x="2" y="13" width="9" height="9" rx="1.5"/><rect x="13" y="13" width="9" height="9" rx="1.5"/></svg>
+{%- when 'education' -%}
+<svg class="icon icon--education" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="m1 8 11-6 11 6-11 6L1 8Zm4 4.3 7 3.8 7-3.8V18l-7 4-7-4v-5.7ZM22 10v8h-2v-7l2-1Z"/></svg>
+{%- when 'quote' -%}
+<svg class="icon icon--quote" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h8v7c0 4-2.5 6.5-7 7v-3c2.5-.5 3.5-1.5 3.5-3H3V5Zm11 0h8v7c0 4-2.5 6.5-7 7v-3c2.5-.5 3.5-1.5 3.5-3H14V5Z"/></svg>
+{%- else -%}
+<svg class="icon icon--{{ include.name | default: 'arrow' }}" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+{%- case include.name -%}
+{%- when 'close' -%}<path d="m6 6 12 12M18 6 6 18"/>
+{%- when 'up' -%}<path d="M12 20V4m-6 6 6-6 6 6"/>
+{%- when 'chevron' -%}<path d="m6 9 6 6 6-6"/>
+{%- when 'document' -%}<path d="M14 3H5v18h14V8l-5-5Z"/><path d="M14 3v5h5M8 12h8M8 16h8"/>
+{%- when 'project' -%}<path d="M14 3h7v7m0-7L10 14M10 5H4v16h16v-7"/>
+{%- when 'microphone' -%}<rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/>
+{%- when 'article' -%}<path d="M5 3h16v18H3V6h2m0-3v18M9 7h4v4H9zm7 0h2m-2 4h2M9 15h9M9 18h9"/>
+{%- when 'award' -%}<circle cx="12" cy="9" r="6"/><path d="m8 14-2 8 6-3 6 3-2-8"/>
+{%- when 'trophy' -%}<path d="M8 3h8v8a4 4 0 0 1-8 0V3ZM8 5H4v4a4 4 0 0 0 4 4m8-8h4v4a4 4 0 0 1-4 4m-4 2v6m-4 0h8"/>
+{%- when 'atom' -%}<ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/><circle cx="12" cy="12" r="1" fill="currentColor"/>
+{%- when 'chart' -%}<path d="M4 20v-6h3v6H4Zm7 0V9h3v11h-3Zm7 0V3h3v17h-3Z" fill="currentColor" stroke="none"/>
+{%- when 'teaching' -%}<circle cx="9" cy="7" r="4"/><path d="M2 21v-3a7 7 0 0 1 14 0v3m0-18a4 4 0 0 1 0 8m4 10v-3a7 7 0 0 0-3-5"/>
+{%- else -%}<path d="M6 18 18 6M6 6h12v12"/>
+{%- endcase -%}
+</svg>
+{%- endcase -%}

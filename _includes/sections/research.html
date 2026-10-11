@@ -1,0 +1,20 @@
+<section id="research" class="section research" aria-labelledby="research-title">
+  <span class="legacy-anchor" id="Publications" aria-hidden="true"></span>
+  <div class="section-heading section-heading--ruled">
+    <h2 id="research-title">{% include icon.html name='document' %}Publications</h2>
+    <div class="filters paper-filters" role="group" aria-label="Filter publications" hidden>
+      <button type="button" data-filter="selected" aria-pressed="true" aria-controls="publications">Selected</button>
+      <button type="button" data-filter="all" aria-pressed="false" aria-controls="publications">All papers</button>
+    </div>
+  </div>
+  <div class="publications" id="publications">
+    {% for paper in site.data.publications %}
+      {% include publication.html paper=paper %}
+    {% endfor %}
+  </div>
+  {% assign scholar = site.data.profile.links | where: 'id', 'scholar' | first %}
+  <div class="research-footer">
+    {% if scholar %}<a href="{{ scholar.url }}">Google Scholar {% include icon.html %}</a>{% endif %}
+  </div>
+  <p id="paper-status" class="sr-only" role="status" aria-live="polite"></p>
+</section>

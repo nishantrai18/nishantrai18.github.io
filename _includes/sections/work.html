@@ -1,0 +1,24 @@
+<section id="work" class="section work" aria-labelledby="work-title">
+  <span class="legacy-anchor" id="Projects" aria-hidden="true"></span>
+  <span class="legacy-anchor" id="Internships" aria-hidden="true"></span>
+  {% assign work_count = 0 %}{% for group in site.data.work %}{% assign work_count = work_count | plus: group.items.size %}{% endfor %}
+  <div class="section-heading">
+    <h2 id="work-title">{% include icon.html name='grid' %}Recent work</h2>
+    <div class="filters work-filters" role="group" aria-label="Filter work" hidden>
+      <button type="button" data-work-filter="all" aria-pressed="true" aria-controls="work-items">All <span data-filter-count>{{ work_count }}</span></button>
+      {% for group in site.data.work %}
+      <button type="button" data-work-filter="{{ group.organization | slugify }}" data-work-label="{{ group.organization | escape }}" aria-pressed="false" aria-controls="work-items">{{ group.organization | escape }} <span data-filter-count>{{ group.items.size }}</span></button>
+      {% endfor %}
+    </div>
+  </div>
+  {% comment %}Balance each row before JavaScript enhances the filters.{% endcomment %}
+  {% assign work_index = 0 %}
+  <ul class="work-grid" id="work-items" role="list">
+    {% for group in site.data.work %}{% for item in group.items %}
+      {% capture work_layout %}{% include work-layout.html count=work_count index=work_index %}{% endcapture %}
+      {% include work-item.html item=item organization=group.organization work_layout=work_layout %}
+      {% assign work_index = work_index | plus: 1 %}
+    {% endfor %}{% endfor %}
+  </ul>
+  <p id="work-status" class="sr-only" role="status" aria-live="polite"></p>
+</section>

@@ -1,0 +1,7 @@
+{
+  "name": "personal-website-tests",
+  "private": true,
+  "scripts": { "test": "node --test site.test.cjs" },
+  "devDependencies": { "happy-dom": "20.14.5" },
+  "engines": { "node": ">=20" }
+}
