@@ -571,146 +571,106 @@ h4 {
   letter-spacing: -.01em;
 }
 
-/* Open credentials and a compact recognition and teaching list. */
-.background-grid {
+/* Open icon gallery: university, recognition and teaching captions share a rhythm. */
+.credential-grid {
   display: grid;
-  grid-template-columns: 1.07fr 1fr;
-  gap: 36px;
-  margin-top: 28px;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  list-style: none;
+  padding: 0;
+  margin: 34px 0 0;
 }
 
-.education-list {
-  display: grid;
-  align-self: start;
-  grid-template-columns: repeat(2,minmax(0,1fr));
-  gap: 32px;
-}
-
-.education-entry {
+.credential-item {
   min-width: 0;
-  padding-left: 36px;
+  padding: 0 12px 28px;
+  text-align: center;
 }
 
-.education-entry + .education-entry {
-  border-left: 1px solid var(--rule);
+.credential-item:nth-child(n+5) {
+  border-top: 1px solid var(--rule);
+  padding-top: 28px;
+  padding-bottom: 0;
 }
 
-.education-mark {
+.credential-mark {
   display: flex;
   align-items: center;
-  width: 72px;
-  height: 72px;
-  margin-bottom: 12px;
+  justify-content: center;
+  width: fit-content;
+  min-width: 104px;
+  height: 104px;
+  margin: 0 auto 14px;
+  color: var(--ink);
 }
 
-.education-mark img {
-  max-width: 70px;
-  max-height: 72px;
+.credential-mark img {
   width: auto;
+  max-width: 104px;
+  max-height: 104px;
   object-fit: contain;
-  mix-blend-mode: multiply;
 }
 
 .education-mark--iitk img {
   filter: brightness(0);
 }
 
-.education-entry h3 {
-  font-size: 18px;
-  font-weight: 600;
+.credential-mark .recognition-image {
+  width: 162px;
+  max-width: 100%;
+  height: auto;
 }
 
-.education-entry p,
+.credential-mark > .icon {
+  width: 76px;
+  height: 76px;
+}
+
+.credential-mark > .icon--medal {
+  width: 84px;
+  height: 84px;
+  color: var(--burgundy);
+}
+
+.credential-mark > .icon--pi {
+  color: var(--blue);
+}
+
+.credential-item:nth-child(n+5) .credential-mark {
+  height: 72px;
+}
+
+.credential-item:nth-child(n+5) .credential-mark > .icon {
+  width: 64px;
+  height: 64px;
+}
+
+.credential-item h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.credential-item h3 a {
+  display: inline-block;
+}
+
+.credential-item p,
 .education-distinction {
   display: block;
-  font-size: 15px;
+  margin-top: 2px;
   color: var(--secondary);
-  margin-top: 3px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
-.education-distinction {
-  max-width: 240px;
-}
-
-.education-entry .education-gpa {
-  font-size: 12px;
-  white-space: nowrap;
+.credential-item .education-gpa {
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
-.recognition-list {
-  list-style: none;
-  padding: 0 0 0 36px;
-  margin: 0;
-  border-left: 1px solid var(--rule);
-  align-self: start;
-}
-
-.recognition-list li {
-  position: relative;
-  display: grid;
-  grid-template-columns: 22px minmax(0,1.3fr) minmax(0,1fr);
-  align-items: center;
-  gap: 16px;
-  min-height: 45px;
-  padding: 9px 0;
-  font-size: 15px;
-}
-
-.recognition-list li + li {
-  border-top: 1px solid var(--rule);
-}
-
-.recognition-title {
-  color: var(--ink);
-  font-weight: 500;
-}
-
-.recognition-list a {
-  color: var(--blue);
-  font-weight: 500;
-}
-
-/* A single keyboard stop and a full-row target for linked credentials. */
-.recognition-link::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-}
-
-.recognition-link:focus-visible {
-  outline: none;
-}
-
-.recognition-list li:has(.recognition-link:focus-visible) {
-  outline: 2px solid var(--blue);
-  outline-offset: 3px;
-}
-
-.recognition-list li:not(:has(.recognition-context)) > :not(.icon) {
-  grid-column: 2 / -1;
-}
-
-.recognition-links {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0 5px;
-}
-
-.recognition-links a {
-  padding-block: 3px;
-}
-
-.recognition-list .icon {
-  width: 22px;
-  height: 22px;
-}
-
-.recognition-context {
-  color: var(--secondary);
-  font-size: 14px;
+.credential-institution {
+  white-space: nowrap;
 }
 
 .service-details {
@@ -1075,7 +1035,7 @@ h4 {
   }
 
   .education-distinction:hover,
-  .recognition-list a:hover {
+  .credential-item h3 a:hover {
     color: var(--blue);
   }
 
@@ -1138,30 +1098,19 @@ h4 {
     font-size: 13px;
   }
 
-  .background-grid {
-    gap: 24px;
+  .credential-item {
+    padding-inline: 8px;
   }
 
-  .education-list {
-    gap: 20px;
+  .credential-item h3 {
+    font-size: 16px;
   }
 
-  .education-entry {
-    padding-left: 14px;
+  .credential-item p,
+  .education-distinction {
+    font-size: 13px;
   }
 
-  .recognition-list {
-    padding-left: 24px;
-  }
-
-  .recognition-list li {
-    gap: 10px;
-    font-size: 14px;
-  }
-
-  .recognition-context {
-    font-size: 12px;
-  }
 }
 
 @media (max-width:1023px) {
@@ -1256,31 +1205,25 @@ h4 {
     --work-row-size: var(--work-row-tablet,3);
   }
 
-  .background-grid {
-    grid-template-columns: 1fr;
-    gap: 26px;
+  .credential-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
   }
 
-  .education-list {
-    max-width: 620px;
+  .credential-item:nth-child(n+3) {
+    border-top: 1px solid var(--rule);
+    padding-top: 24px;
   }
 
-  .education-entry {
-    padding-left: 36px;
+  .credential-item:nth-child(n+5) {
+    padding-bottom: 24px;
   }
 
-  .recognition-list {
-    padding: 0;
-    border: 0;
+  .credential-item:nth-last-child(-n+2) {
+    padding-bottom: 0;
   }
 
-  .recognition-list li {
-    grid-template-columns: 22px minmax(0,1fr) minmax(0,.8fr);
-    font-size: 15px;
-  }
-
-  .recognition-context {
-    font-size: 14px;
+  .credential-item:nth-child(n+3) .credential-mark {
+    height: 72px;
   }
 
   .publication {
@@ -1477,56 +1420,43 @@ h4 {
     font-size: 12px;
   }
 
-  .background-grid {
-    margin-top: 22px;
-    gap: 24px;
+  .credential-grid {
+    margin-top: 26px;
   }
 
-  .education-list {
-    gap: 18px;
+  .credential-item {
+    padding: 0 8px 24px;
   }
 
-  .education-entry {
-    padding-left: 0;
+  .credential-mark {
+    min-width: 76px;
+    height: 76px;
+    margin-bottom: 12px;
   }
 
-  .education-entry + .education-entry {
-    padding-left: 18px;
+  .credential-mark img {
+    max-width: 76px;
+    max-height: 76px;
   }
 
-  .education-mark {
-    height: 54px;
-    width: 54px;
-    margin-bottom: 10px;
+  .credential-mark .recognition-image {
+    width: 128px;
+    max-width: 100%;
   }
 
-  .education-mark img {
-    max-height: 54px;
-    max-width: 54px;
+  .credential-mark > .icon,
+  .credential-item:nth-child(n+5) .credential-mark > .icon {
+    width: 56px;
+    height: 56px;
   }
 
-  .education-entry h3 {
-    font-size: 16px;
+  .credential-item h3 {
+    font-size: 15px;
   }
 
-  .education-entry p,
+  .credential-item p,
   .education-distinction {
     font-size: 12px;
-  }
-
-  .recognition-list li {
-    gap: 12px;
-    font-size: 13px;
-    grid-template-columns: 20px minmax(0,1.1fr) minmax(0,1fr);
-  }
-
-  .recognition-context {
-    font-size: 12px;
-  }
-
-  .recognition-list .icon {
-    width: 20px;
-    height: 20px;
   }
 
   .service-details {
@@ -1711,7 +1641,7 @@ h4 {
 
   .publication,
   .work-card,
-  .education-entry {
+  .credential-item {
     break-inside: avoid;
   }
 

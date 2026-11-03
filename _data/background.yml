@@ -3,8 +3,8 @@ education:
   - id: stanford
     short_name: Stanford
     institution: "Stanford University"
-    degree: "MS, Computer Science"
-    gpa: "4.17/4.0"
+    degree: "Master’s in Computer Science"
+    gpa: "4.1/4.0"
     year: "2021"
     distinction: "Distinction in Research"
     url: "https://nishantrai18.github.io/resources/stanford_masters_thesis.pdf"
@@ -14,31 +14,39 @@ education:
   - id: iitk
     short_name: IIT Kanpur
     institution: "IIT Kanpur"
-    degree: "BTech, Computer Science"
+    degree: "Bachelor’s in Computer Science"
     gpa: "9.9/10.0"
     year: "2017"
     url: "https://cse.iitk.ac.in/newsletter/NewsletterJuly2017V1I1.pdf"
     source: "https://cse.iitk.ac.in/newsletter/NewsletterJuly2017V1I1.pdf"
 
 # GPAs, training-camp ranks and medal wording were supplied by Nishant on 2026-10-10.
+# Stanford GPA corrected to 4.1/4.0 by Nishant on 2026-11-03.
 # No international team selection is inferred.
 highlights:
-  - title: "35 under 35: Self Driving"
-    icon: trophy
+  - title: "35 under 35"
+    context: Self Driving
+    institution: Business Insider
+    image: /assets/images/recognition/business-insider.svg
+    image_width: 140
+    image_height: 48
     year: 2022
     url: "https://www.businessinsider.com/self-driving-industry-rising-stars-2022-2022-2#nishant-rai-26-waymo-16"
-  - title: "Gold Medal: Best performance in batch"
-    icon: trophy
+  - title: "Gold Medal"
+    context: Best performance in batch
+    institution: IIT Kanpur
+    icon: medal
     url: "https://cse.iitk.ac.in/newsletter/NewsletterJuly2017V1I1.pdf"
   - title: IPhO training camp
     context: Top 30 nationally
     icon: atom
   - title: IMO training camp
     context: Top 6 nationally
-    icon: chart
+    icon: pi
   - title: CS231n & CS145
     context: Teaching assistant
-    icon: teaching
+    institution: Stanford University
+    icon: classroom
     links:
       - label: CS231n
         url: https://cs231n.stanford.edu/2021/
@@ -46,7 +54,8 @@ highlights:
         url: https://cs145-fa19.github.io/
   - title: ESC101
     context: Section leader
-    icon: teaching
+    institution: IIT Kanpur
+    icon: code-book
 
 recognition:
   - title: "35 under 35"

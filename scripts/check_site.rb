@@ -210,8 +210,17 @@ check.call(array.call(highlights), 'background.highlights: expected a nonempty l
 highlights = [] unless highlights.is_a?(Array)
 highlights.each_with_index do |entry, i|
   label = "background.highlights[#{i}]"
-  next unless require_fields.call(entry, %w[title icon], label)
-  check.call(string.call(entry['context']), "#{label}: context must be a nonempty string when supplied") if entry.key?('context')
+  next unless require_fields.call(entry, %w[title], label)
+  check.call(entry.key?('icon') != entry.key?('image'), "#{label}: supply either icon or image")
+  %w[icon context institution].each do |field|
+    check.call(string.call(entry[field]), "#{label}: #{field} must be a nonempty string when supplied") if entry.key?(field)
+  end
+  if entry.key?('image')
+    asset_check.call(entry['image'], "#{label}.image")
+    %w[image_width image_height].each do |field|
+      check.call(entry[field].is_a?(Integer) && entry[field].positive?, "#{label}: #{field} must be a positive integer")
+    end
+  end
   check.call(entry['year'].to_s.match?(/\A\d{4}\z/), "#{label}: year must be four digits") if entry.key?('year')
   check.call(!(entry.key?('url') && entry.key?('links')), "#{label}: use either url or links, not both")
   url_check.call(entry['url'], "#{label}.url") if entry.key?('url')

@@ -60,6 +60,8 @@ The twelve cobalt illustrations in `assets/images/work/art/` were generated with
 
 Brand marks remain trademarks of their respective owners.
 
+The Business Insider wordmark in `assets/images/recognition/` is the original SVG from its [Media Impact brand page](https://www.mediaimpact.de/en/brands/business-insider/). It identifies the publisher of the 35 under 35 profile. Medal, physics, mathematics and teaching symbols are local illustrative SVGs in `_includes/icon.html`, not official award or course emblems.
+
 ## Affiliation strip
 
 Nuro, Stanford, Fyusion, Rubrik, and IIT Kanpur images come from Nishant’s [original public website](https://nishantrai18.github.io/). Downloaded files remain in `assets/images/affiliations/`; CSS controls their display size and color treatment. The IIT Kanpur image is stored as GIF to match its actual format. Organization marks remain the property of their owners.
