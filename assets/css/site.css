@@ -577,18 +577,18 @@ h4 {
   grid-template-columns: repeat(4,minmax(0,1fr));
   list-style: none;
   padding: 0;
-  margin: 34px 0 0;
+  margin: 28px 0 0;
 }
 
 .credential-item {
   min-width: 0;
-  padding: 0 12px 28px;
+  padding: 0 12px 24px;
   text-align: center;
 }
 
 .credential-item:nth-child(n+5) {
   border-top: 1px solid var(--rule);
-  padding-top: 28px;
+  padding-top: 24px;
   padding-bottom: 0;
 }
 
@@ -597,16 +597,16 @@ h4 {
   align-items: center;
   justify-content: center;
   width: fit-content;
-  min-width: 104px;
-  height: 104px;
-  margin: 0 auto 14px;
+  min-width: 88px;
+  height: 88px;
+  margin: 0 auto 12px;
   color: var(--ink);
 }
 
 .credential-mark img {
   width: auto;
-  max-width: 104px;
-  max-height: 104px;
+  max-width: 88px;
+  max-height: 88px;
   object-fit: contain;
 }
 
@@ -615,19 +615,19 @@ h4 {
 }
 
 .credential-mark .recognition-image {
-  width: 162px;
+  width: 144px;
   max-width: 100%;
   height: auto;
 }
 
 .credential-mark > .icon {
-  width: 76px;
-  height: 76px;
+  width: 64px;
+  height: 64px;
 }
 
 .credential-mark > .icon--medal {
-  width: 84px;
-  height: 84px;
+  width: 72px;
+  height: 72px;
   color: var(--burgundy);
 }
 
@@ -636,12 +636,12 @@ h4 {
 }
 
 .credential-item:nth-child(n+5) .credential-mark {
-  height: 72px;
+  height: 60px;
 }
 
 .credential-item:nth-child(n+5) .credential-mark > .icon {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
 }
 
 .credential-item h3 {
@@ -1421,33 +1421,49 @@ h4 {
   }
 
   .credential-grid {
-    margin-top: 26px;
+    margin-top: 22px;
   }
 
   .credential-item {
-    padding: 0 8px 24px;
+    padding: 0 8px 20px;
+  }
+
+  .credential-item:nth-child(n+3) {
+    padding-top: 20px;
+  }
+
+  .credential-item:nth-child(n+5) {
+    padding-bottom: 20px;
+  }
+
+  .credential-item:nth-last-child(-n+2) {
+    padding-bottom: 0;
   }
 
   .credential-mark {
-    min-width: 76px;
-    height: 76px;
-    margin-bottom: 12px;
+    min-width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
   }
 
   .credential-mark img {
-    max-width: 76px;
-    max-height: 76px;
+    max-width: 60px;
+    max-height: 60px;
   }
 
   .credential-mark .recognition-image {
-    width: 128px;
+    width: 108px;
     max-width: 100%;
+  }
+
+  .credential-item:nth-child(n+3) .credential-mark {
+    height: 48px;
   }
 
   .credential-mark > .icon,
   .credential-item:nth-child(n+5) .credential-mark > .icon {
-    width: 56px;
-    height: 56px;
+    width: 44px;
+    height: 44px;
   }
 
   .credential-item h3 {
